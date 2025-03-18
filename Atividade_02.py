@@ -30,7 +30,7 @@ cidades.head()
 ##9. Utilizando pandas, como selecionar uma coluna específica e filtrar linhas em um “DataFrame” com base em uma condição?
 df = pd.DataFrame(cidades)
 rj = df[df['uf'] == 'Rio de Janeiro']
-rj
+print(rj)
 
 #%%
 ## 10.Utilizando pandas, como lidar com valores ausentes (NaN) em um DataFrame?

@@ -5,7 +5,9 @@ R) É um ramo da inteligência artificial onde treinamos sistemas para reconhece
 
 ### 2. Explique o conceito de conjunto de treinamento, conjunto de validação e conjunto de teste em machine learning.
 R) Conjunto de Treinamento: Etapa onde o modelo analisa um conjunto de dados para que possa reconhecer padrões. É a etapa em que o modelo aprende.
+
 Conjunto de Validação: É o conjunto onde o modelo ajusta seus parâmetros para escolher a melhor configuração para processar esses dados.
+
 Conjunto de Teste: Utilizado para avaliar o desempenho do modelo. 
 
 ===========================================================
