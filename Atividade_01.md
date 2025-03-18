@@ -1,4 +1,4 @@
-##1.Explique, com suas palavras, o que é machine learning?
+## 1.Explique, com suas palavras, o que é machine learning?
 R) É um ramo da inteligência artificial onde treinamos sistemas para reconhecer padrões, de forma que possam fazer previsões e realizar ações para atingir algum resultado esperado.
 
 2. Explique o conceito de conjunto de treinamento, conjunto de validação e conjunto de teste em machine learning.
