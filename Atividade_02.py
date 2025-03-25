@@ -29,6 +29,7 @@ def listaPrimos(lst):
     return elst
 
 print(listaPrimos(a))
+
 # %%
 ##3. Escreva uma função que receba duas listas e retorne outra lista com os elementos que estão presentes em apenas uma das listas.
 def listas_separadas(lst1, lst2):
