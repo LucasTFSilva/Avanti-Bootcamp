@@ -10,9 +10,9 @@ def definir_impares(lista):
 a = [3, 4, 5, 6, 7, 8, 9, 90, 10]
 b = [5, 67, 8, 89,9 ,12, 23, 4, 5,]
 definir_impares(a)
+
 #%%
 ## 2. Escreva uma função que receba uma lista de números e retorne outra lista com os números primos presentes.
-
 def ePrimo(n):
     if n < 2:
         return False
@@ -50,21 +50,18 @@ print(f'O segundo maior número dessa lista é {resultado}')
 
 # %%
 ## 5. Crie uma função que receba uma lista de tuplas, cada uma contendo o nome e a idade de uma pessoa, e retorne a lista ordenada pelo nome das pessoas em ordem alfabética.
-
 def list_tuplas(lst):
     resposta = sorted(lst, key=lambda lst:lst[0])
     return resposta
 
-lista_de_tuplas = [('Anderson', 40), ('Renata', 45), ('Lucas', 27), ('Beatriz', 26)]
+lista_de_tuplas = [('Dolores', 70), ('Renata', 45), ('Lucas', 27), ('Beatriz', 26)]
 list_tuplas(lista_de_tuplas)
 
 # %%
-## 6. Observe os espaços sublinhados e complete o código
-
+## 6. Observe os espaços sublinhados e complete o código:
 import matplotlib.pyplot as plt
 import numpy as np
-fig, axs = plt.subplots(ncols=2, nrows=2, figsize=(5.5, 3.5),
- layout="constrained")
+fig, axs = plt.subplots(ncols=2, nrows=2, figsize=(5.5, 3.5), layout="constrained")
 for row in range(2):
         for col in range(2):
             axs[row, col].annotate(f'axs[{row}, {col}]', (0.5, 0.5),
@@ -72,9 +69,21 @@ for row in range(2):
             fontsize=18, color='darkgrey')
 fig.suptitle('plt.subplots()')
 
+# %%
+## 7. Observe os espaços sublinhados e complete o código:
+import numpy as np
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+x = np.linspace(-2 * np.pi, 2 * np.pi, 100)
+y = np.sin(x)
+fig, ax = plt.subplots()
+ax.plot(x, y)
+
 #%%
 ## 8. Utilizando pandas, como realizar a leitura de um arquivoA CSV em um DataFrame e exibir as primeiras linhas?
-cidades = pd.read_csv("../Avanti-Bootcamp/dados/cidades.csv")
+import pandas as pd
+cidades = pd.read_csv("../Avanti-Bootcamp/planilhas/cidades.csv")
+cidades.describe()
 cidades.head()
 
 #%%
@@ -84,10 +93,8 @@ rj = df[df['uf'] == 'Rio de Janeiro']
 print(rj)
 
 #%%
-## 10.Utilizando pandas, como lidar com valores ausentes (NaN) em um DataFrame?
-## Podemos substituir, ignorar ou remover os valores ausentes dentro de um dataframe.
-meteritos = pd.read_csv("../Avanti-Bootcamp/dados/meteorite_landings.csv")
+## 10. Utilizando pandas, como lidar com valores ausentes (NaN) em um DataFrame? Podemos substituir, ignorar ou remover os valores ausentes dentro de um dataframe.
+meteritos = pd.read_csv("../Avanti-Bootcamp/planilhas/meteorite_landings.csv")
 dfmet = pd.DataFrame(meteritos)
 dfmet_clean = dfmet.dropna(subset=['year', 'mass (g)', 'reclat', 'reclong', 'GeoLocation'])
 dfmet_clean.isna().sum()
-
