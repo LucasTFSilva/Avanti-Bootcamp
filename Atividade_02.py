@@ -30,7 +30,7 @@ def listaPrimos(lst):
 
 print(listaPrimos(a))
 
-# %%
+#%%
 ##3. Escreva uma função que receba duas listas e retorne outra lista com os elementos que estão presentes em apenas uma das listas.
 def listas_separadas(lst1, lst2):
     lst_final = []
@@ -49,7 +49,7 @@ def seg_maior(n):
 resultado = seg_maior(lista)
 print(f'O segundo maior número dessa lista é {resultado}')
 
-# %%
+#%%
 ## 5. Crie uma função que receba uma lista de tuplas, cada uma contendo o nome e a idade de uma pessoa, e retorne a lista ordenada pelo nome das pessoas em ordem alfabética.
 def list_tuplas(lst):
     resposta = sorted(lst, key=lambda lst:lst[0])
@@ -58,7 +58,7 @@ def list_tuplas(lst):
 lista_de_tuplas = [('Dolores', 70), ('Renata', 45), ('Lucas', 27), ('Beatriz', 26)]
 list_tuplas(lista_de_tuplas)
 
-# %%
+#%%
 ## 6. Observe os espaços sublinhados e complete o código:
 import matplotlib.pyplot as plt
 import numpy as np
@@ -70,7 +70,7 @@ for row in range(2):
             fontsize=18, color='darkgrey')
 fig.suptitle('plt.subplots()')
 
-# %%
+#%%
 ## 7. Observe os espaços sublinhados e complete o código:
 import numpy as np
 import matplotlib as mpl
