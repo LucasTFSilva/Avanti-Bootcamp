@@ -37,7 +37,7 @@ def listas_separadas(lst1, lst2):
     result = lst_final.append(lst1)
     return result
 
-print(listas_separadas(a, b))
+print(listas_separadas(a, b)) #Utilizando listas da atividade 01 
 
 #%%
 ## 4. Dada uma lista de números inteiros, escreva uma função para encontrar o segundo maior valor na lista
@@ -46,7 +46,7 @@ def seg_maior(n):
     segundo = df4.nlargest(2).iloc[-1]
     return segundo
 
-resultado = seg_maior(lista)
+resultado = seg_maior(a) #Utilizando lista da atividade 01
 print(f'O segundo maior número dessa lista é {resultado}')
 
 #%%
